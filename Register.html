@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Css/Home.css">
     <link rel="icon" href="Anexos/small-duck-svgrepo-com.svg">
-    <script src="node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
-    <link rel="stylesheet" href="Home_adjust.css">
-    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Css/Home_adjust.css">
+    <script src="Js/Bootstrap/bootstrap.bundle.min.js"></script>
     <title>Duck GO! - Registro</title>
 </head>
 
 <body class="bg-warning-subtle d-flex flex-column justify-content-between min-vh-100">
     <header>
-        <nav class="navbar navbar-expand-sm bg-primary-subtle">
+        <nav class="navbar navbar-expand-lg bg-primary-subtle">
             <div class="container-fluid">
                 <a class="navbar-brand text-primary d-flex justify-content-between align-items-center"
-                    href="Home.html"><svg id="Logo" class="m-2" fill="currentColor" version="1.1" id="Capa_1"
+                    href="index.html"><svg id="Logo" class="m-2" fill="currentColor" version="1.1" id="Capa_1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px"
                         height="25px" viewBox="0 0 209.322 209.322" xml:space="preserve">
                         <g>
@@ -71,42 +69,55 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-5">
+                        <ul class="navbar-nav flex-grow-1 pe-md-5">
                             <li class="nav-item">
-                                <a class="nav-link active pe-5 text-secondary" aria-current="page" href="Home.html">Home</a>
+                                <a class="nav-link active pe-md-5 text-secondary" aria-current="page"
+                                    href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active pe-5 text-secondary" href="Perfil.html">Perfil do Usuário</a>
+                                <a class="nav-link active pe-md-5 text-secondary" href="Perfil.html">Perfil do
+                                    Usuário</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active pe-5 text-secondary" href="Instrucoes.html">Como Jogar</a>
+                                <a class="nav-link active pe-md-5 text-secondary" href="Instrucoes.html">Como Jogar</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active pe-5 text-secondary" href="Parceiros.html">Lista de Prêmios</a>
-                            </li>                            
+                                <a class="nav-link active pe-md-5 text-secondary" href="Parceiros.html">Lista de
+                                    Prêmios</a>
+                            </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle pe-5 text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Locais de Caça
+                                <a class="nav-link dropdown-toggle pe-md-5 text-secondary" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Locais de Caça
                                 </a>
                                 <ul class="dropdown-menu bg-primary-subtle">
-                                <li><a class="dropdown-item text-secondary" href="#">Local 1</a></li>
-                                <li><a class="dropdown-item text-secondary" href="#">Local 2</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item text-secondary" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item text-secondary" href="#">Local 1</a></li>
+                                    <li><a class="dropdown-item text-secondary" href="#">Local 2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item text-secondary" href="#">Something else here</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item d-flex p-2">
-                                <button class="btn btn-primary"><a class="nav-link active p-0" href="Register.html">Registrar</a></button>
+                            <!-- <li class="nav-item d-flex p-md-2">
+                                <button class="btn btn-primary"><a class="nav-link active p-0"
+                                        href="Register.html">Registrar</a></button>
                             </li>
-                            <li class="nav-item d-flex p-2">
-                                <button class="btn btn-success"><a class="nav-link active p-0" href="Login.html">Entrar</a></button>
+                            <li class="nav-item d-flex p-md-2">
+                                <button class="btn btn-success"><a class="nav-link active p-0"
+                                        href="Login.html">Entrar</a></button>
                             </li>
-                            <li class="nav-item d-flex p-2 d-none">
+                            <li class="nav-item d-flex p-md-2 d-none">
                                 <button class="btn btn-danger">Logout</button>
-                            </li>
+                            </li> -->
                         </ul>
+                        <form class="d-flex flex-column flex-lg-row" role="search">
+                            <button class="btn btn-primary mx-2 my-2 my-md-0"><a class="nav-link active p-0"
+                                href="Register.html">Registrar</a></button>
+                                <button class="btn btn-success mx-2 my-2 my-md-0"><a class="nav-link active p-0"
+                                    href="Login.html">Entrar</a></button>
+                                <button class="btn btn-danger mx-2 my-2 my-md-0">Logout</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -114,7 +125,7 @@
     </header>
     <main class="bg-warning-subtle d-flex flex-column justify-content-around h-100 p-3 p-md-0">
         <div class="container">
-            <form class="row g-3 needs-validation" novalidate>
+            <form class="row g-3 needs-validation" novalidate onsubmit="validate()">
                 <div class="col-md-6">
                     <label for="validationCustom01" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="validationCustom01" required>
@@ -217,11 +228,11 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Registrar</button>
+                    <button class="btn btn-primary" type="submit" id="Submit">Registrar</button>
                 </div>
             </form>
         </div>
-        <script src="validation.js"></script>
+        <script src="Js/validation.js"></script>
     </main>
     <footer>
         <div class=" container-fluid border-top border text-center mt-1 text-secondary fs-6">Todos os direitos
